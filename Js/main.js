@@ -1,8 +1,8 @@
 class Producto {
     constructor(id, nombre, precio){
-        globalThis.id= parseInt(id);
-        globalThis.nombre = nombre;
-        globalThis.precio = precio;
+        this.id= parseInt(id);
+        this.nombre = nombre;
+        this.precio = precio;
     }
 }
 const productos =[];
@@ -15,6 +15,6 @@ productos.push(new Producto(6,"Razer Kraken X USB",7000));
 console.log(productos)
 
 for (const producto of productos) {
-    alert("Prod " +productos.nombre);
+    alert("Prod " +producto.nombre);
     
 }
